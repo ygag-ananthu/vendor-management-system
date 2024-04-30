@@ -1,3 +1,4 @@
 from django.contrib import admin
+from historical_performance.models import HistoricalPerformance
 
-# Register your models here.
+admin.site.register(HistoricalPerformance)
