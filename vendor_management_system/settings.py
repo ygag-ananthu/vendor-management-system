@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(+fy3h_h#lw&qaj7+og3zn8#=-yppx!5vo&-j2&y=!=o@zznjo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'historical_performance',
     'purchase_orders',
     'vendors',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -76,10 +77,15 @@ WSGI_APPLICATION = 'vendor_management_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vendor_management',
+        'USER': 'postgres',
+        'PASSWORD': '0480',
+        'HOST': '127.0.0.1',
+        'PORT': 5432,
     }
 }
 
