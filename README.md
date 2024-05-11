@@ -50,6 +50,10 @@ The API endpoints are documented below:
 - **Vendor Performance Endpoint:**
   - GET /api/vendors/{vendor_id}/performance: Retrieve a vendor's performance metrics.
 
+## Postman Collection
+
+For easy testing and interaction with the API endpoints, you can use the Postman collection provided [here](https://www.postman.com/speeding-astronaut-535841/workspace/vendor-management-system/collection/24765234-b7af1994-1760-4ac5-b17a-34a63d1da2a9?action=share&creator=24765234).
+
 ## Testing
 
 To run the test suite, execute the following command:
